@@ -57,6 +57,10 @@ h1 {
     min-height: 26px;
 }
 
+.header__navbar-item--has-qr .header__qr{
+    display: block;
+}
+
 .header__navbar-item,
 .header__navbar-item-link{
     display: inline-block;
@@ -96,6 +100,7 @@ h1 {
     right: -10px;
     top: 0;
 }
+
 .header__navbar-icon-link
 {
     color: var(--white-color);
@@ -110,4 +115,38 @@ h1 {
 {
     cursor: text;
     color: var(--white-color);
+}
+
+/*header QR Code*/
+.header__qr{
+    background-color: var(--white-color);
+    width: 186px;
+    position: absolute;
+    border-radius: 5px;
+    top: 95%;
+    padding: 8px;
+    display: none;
+}
+
+.header__qr-image
+{
+    width: 100%;
+}
+.header__qr-apps
+{
+    display: flex;
+    justify-content: space-between;
+}
+.header__qr-download-image
+{
+    height: 18px;
+}
+
+.header__qr-link:nth-child(1)
+{
+    margin-left: 12px;
+}
+.header__qr-link:nth-child(2)
+{
+    margin-right: 1px;
 }
