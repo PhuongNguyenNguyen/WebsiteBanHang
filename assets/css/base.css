@@ -37,8 +37,77 @@ h1 {
     flex-wrap: wrap ;
 }
 
+.header {
+    height: 120px;
+    background-color: #78B43D;
+}
 
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
 
+.header__navbar-list{
+    list-style: none;
+}
 
+.header__navbar-item {
+    margin: 0 10px;
+    position: relative;
+    min-height: 26px;
+}
 
+.header__navbar-item,
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white-color) ;
+    text-decoration: none;
+    font-weight: 300;
+}
 
+.header__navbar-item:hover,
+.header__navbar-icon-link:hover,
+.header__navbar-item-link:hover
+{
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link
+{
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__navbar-item-bold
+{
+    font-weight: bold;
+}
+
+.header__navbar-item--line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #90C95A;
+    height: 16px;
+    right: -10px;
+    top: 0;
+}
+.header__navbar-icon-link
+{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.header__navbar-icon
+{
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+.header__navbar-item-disable
+{
+    cursor: text;
+    color: var(--white-color);
+}
