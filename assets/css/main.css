@@ -1,3 +1,128 @@
-*{
+/*App container*/
 
+.app__container{
+    background-color: #F5F5F5 ;
+}
+.category
+{
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+.category__heading
+{
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding: 6px 6px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.category__heading-icon
+{
+    font-size: 1.4rem;
+}
+
+.home-product-item
+{
+    background-color: var(--white-color);
+    position: relative;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(0,0,0,.1);
+}
+
+.home-product-item__img
+{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 10px;
+}
+.home-product-item__name{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    height: 3.6rem; /*Gioi han 2 dong*/
+    margin: 10px 10px;
+    overflow: hidden; /* Khi doi tuong con ngoai doi tuong cha*/
+    display: block;
+
+    /*Them dau ...*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.home-product-item__price
+{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.home-product-item__price-old
+{
+    font-size: 1.3rem;
+    color: #666;
+    text-decoration: line-through; /*chu gach ngang*/
+    margin-left: 10px;
+}
+.home-product-item__price-new
+{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-left:10px;
+}
+
+.category-list
+{
+    list-style: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.category-item
+{
+}
+.category-item--active
+{
+
+}
+.category-item__link
+{
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    display: block;
+    text-transform: uppercase;
+    transition: right linear 0.1s;  /*animation*/
+    right: 0;
+}
+
+.category-item__link:hover
+{
+    right: -4px;
+    color: var(--text-color-hover);
+    opacity: 0.4;
+    cursor: pointer;
+}
+.footer {
+    margin-top: 30px;
+    border-top: 4px solid var(--primary-color) ;
+}
+
+.footer-list
+{
+    padding: 0;
+    list-style: none;
+}
+
+.footer-item-link
+{
+    color: #666;
+    text-decoration: none;
+    padding: 2px 0;
+}
+.footer-item-link:hover
+{
+    opacity: 0.5;
 }
